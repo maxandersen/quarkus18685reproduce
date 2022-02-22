@@ -1,0 +1,1 @@
+xargs -I % -P 10 curl http://localhost:8080/hello < <(printf '%s\n' {1..400})
